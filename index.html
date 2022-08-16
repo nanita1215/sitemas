@@ -1,0 +1,165 @@
+
+<body>
+  
+</body>
+</html>
+
+<head>
+  <title>Problema</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+
+
+
+body{  
+  background: url(/imgs/php.png) no-repeat;
+  /* background-repeat: no-repeat; */
+  /* grid-template-columns:  1fr 1fr 1fr 1fr ; */
+  background-position: 300px 600px;
+  padding: 100px;
+  display:                grid;
+  grid-template-columns: repeat(5, 1fr) 100px;  
+  height: auto;
+
+  grid-gap:               02px;
+  font-family:            'Mouse Memoirs';
+  font-size:              large;
+  text-align:             justify;
+  
+}
+div {
+  margin: 10px 10px;
+  justify-content: center;
+  box-shadow: 4px 4px 0px 4px #1e475110, 8px 8px 0px 6px #237c5510, 12px 12px 0px 8px #73ad2810;
+  border: black;
+  color: rgb(20, 22, 20);
+  background: rgb(127, 151, 21);
+  width: 160px;
+  height: 150px;
+  border-radius: 15px;  
+  display: flex; 
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+  
+}  
+  button {
+    width: 35px;
+    height: 38px;    
+    border-radius: 25px;
+    color: blueviolet;
+  }
+  h4{
+    width: auto;
+    height: 5px;
+  }
+</style>
+
+<body>  
+  <div>
+    <h2>Registra Alumno</h2>
+    <button type="button" onclick="location.href= 'RegAlum.php'" value="Registrar Alumno" aria-placeholder="Registro"></button>
+    <br>
+  </div>
+
+  <div>
+  <h2>Registra Curso</h2> 
+  <button type="button" onclick="location.href= 'RegCurso.php'" value="Registrar Curso"></button>
+  <br>
+</div>
+
+  <div>
+  <h2>Ver Cursos </h2>
+  <button type="button" onclick="location.href= 'tablaCursos.php'" value="Ver Cursos"></button>
+  <br>
+</div>
+
+  <div>
+  <h2>Ver Alumnos </h2>
+  <button type="button" onclick="location.href= 'tablaAlumnos.php'" value="Ver Alumnos"></button>
+  <br>
+</div>
+
+  <div>
+  <h2>Consultar usuario por email </h2>
+  <button type="button" onclick="location.href= 'emailSearch.php'" value="Ver Alumnos"></button>
+  <br>
+</div>
+
+  <div>
+  <h2>Eliminar usuario por email </h2>
+  <button type="button" onclick="location.href= 'deleteReg.php'" value="Borrar Alumno"></button>
+  <br>
+</div>
+
+  <div>
+  <h2>Reset </h2>
+  <button type="button" onclick="location.href= 'reset.php'" value="Borrar Alumno"></button>
+  <br>
+</div>
+
+  <div>
+  <h2>Modificar email </h2>
+  <button type="button" onclick="location.href= 'consultaCorreo1.php'" value="Modificar Alumno"></button>
+  <br>
+</div>
+
+  <div>
+  <h2>Correos antiguos </h2>
+  <button type="button" onclick="location.href= 'consultaCorreoAntiguo.php'" value="Consultar Alumno"></button>
+  <br>
+</div>
+
+  <div>
+  <h2>Alumnos inscritos por curso </h2>
+  <button type="button" onclick="location.href= 'groupByInscritos.php'" value="Modificar Alumno"></button>
+  <br>
+</div>
+
+  <div>
+  <h2>Tabla multiplicar </h2>
+  <button type="button" onclick="location.href= 'tablasM1.php'" value="Modificar Alumno"></button>
+  <br> 
+</div>
+
+  <div>
+  <h2>Inscritos </h2>
+  <button type="button" onclick="location.href= 'inscritos1.php'" value="Alumnos por Curso"></button>
+  <br> 
+</div>
+
+<div>
+  <h2>Paginación </h2>
+  <button type="button" onclick="location.href= 'paginacion.php'" value="Alumnos por Curso"></button>
+  <br> 
+</div>
+
+<div>
+  <h2>Imagen </h2>
+  <button type="button" onclick="location.href= 'imagen.php'" value="Alumnos por Curso"></button>
+  <br> 
+</div>
+
+<div>
+  <h2>Cookes </h2>
+  <button type="button" onclick="location.href= 'cookies1.php'" value="Configuración cookies"></button>
+  <br> 
+</div>
+
+<div>
+  <h2>Borrar Cookies </h2>
+  <button type="button" onclick="location.href= 'borrarCookie1.php'" value="Configuración cookies"></button>
+  <br> 
+</div>
+
+<div>
+  <h2>Variables Cookies </h2>
+  <button type="button" onclick="location.href= '/ejercicioCookies/variablesSesion1.php'" value="Configuración cookies"></button>
+  <br> 
+</div>
+ 
+</body>
+
+</html>
