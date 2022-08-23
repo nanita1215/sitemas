@@ -1,7 +1,3 @@
-
-<body>
-  
-</body>
 </html>
 
 <head>
@@ -13,28 +9,29 @@
 
 
 body{  
-  background: url(/imgs/php.png) no-repeat;
+  /* background: url(/imgs/php.png) no-repeat; */
   /* background-repeat: no-repeat; */
   /* grid-template-columns:  1fr 1fr 1fr 1fr ; */
   background-position: 300px 600px;
   padding: 100px;
   display:                grid;
-  grid-template-columns: repeat(5, 1fr) 100px;  
+  grid-template-columns: repeat(4, 1fr) 100px;  
   height: auto;
-
+  width: 600px;
   grid-gap:               02px;
   font-family:            'Mouse Memoirs';
-  font-size:              large;
-  text-align:             justify;
+  font-size:              medium;
+  text-align:             center;
+  border: 1px solid black;
   
 }
-div {
+div menu {  
   margin: 10px 10px;
   justify-content: center;
-  box-shadow: 4px 4px 0px 4px #1e475110, 8px 8px 0px 6px #237c5510, 12px 12px 0px 8px #73ad2810;
-  border: black;
-  color: rgb(20, 22, 20);
-  background: rgb(127, 151, 21);
+  /* box-shadow: 4px 4px 0px 4px #1e475110, 8px 8px 0px 6px #237c5510, 12px 12px 0px 8px #73ad2810; */
+  border: rgb(88, 146, 23);
+  color: rgb(228, 217, 122);
+  background: rgb(97, 29, 97);
   width: 160px;
   height: 150px;
   border-radius: 15px;  
@@ -43,126 +40,144 @@ div {
   padding: 5px;
   align-items: center;
   justify-content: space-between;
-  
+  border: 2px red solid;  
 }  
   button {
     width: 35px;
     height: 38px;    
-    border-radius: 25px;
-    color: blueviolet;
+    border-radius: 20px;
+    background-color: rgb(205, 146, 228);
   }
-  h4{
+  h2{
     width: auto;
     height: 5px;
   }
 </style>
 
 <body>  
-  <div>
+  <div class="menu">
     <h2>Registra Alumno</h2>
     <button type="button" onclick="location.href= 'RegAlum.php'" value="Registrar Alumno" aria-placeholder="Registro"></button>
     <br>
   </div>
 
-  <div>
+  <div class="menu">
   <h2>Registra Curso</h2> 
   <button type="button" onclick="location.href= 'RegCurso.php'" value="Registrar Curso"></button>
   <br>
 </div>
 
-  <div>
+  <div class="menu">
   <h2>Ver Cursos </h2>
   <button type="button" onclick="location.href= 'tablaCursos.php'" value="Ver Cursos"></button>
   <br>
 </div>
 
-  <div>
+  <div class="menu">
   <h2>Ver Alumnos </h2>
   <button type="button" onclick="location.href= 'tablaAlumnos.php'" value="Ver Alumnos"></button>
   <br>
 </div>
 
-  <div>
+  <div class="menu">
   <h2>Consultar usuario por email </h2>
   <button type="button" onclick="location.href= 'emailSearch.php'" value="Ver Alumnos"></button>
   <br>
 </div>
 
-  <div>
+  <div class="menu">
   <h2>Eliminar usuario por email </h2>
   <button type="button" onclick="location.href= 'deleteReg.php'" value="Borrar Alumno"></button>
   <br>
 </div>
 
-  <div>
+  <div class="menu">
   <h2>Reset </h2>
   <button type="button" onclick="location.href= 'reset.php'" value="Borrar Alumno"></button>
   <br>
 </div>
 
-  <div>
+  <div class="menu">
   <h2>Modificar email </h2>
   <button type="button" onclick="location.href= 'consultaCorreo1.php'" value="Modificar Alumno"></button>
   <br>
 </div>
 
-  <div>
+  <div class="menu">
   <h2>Correos antiguos </h2>
   <button type="button" onclick="location.href= 'consultaCorreoAntiguo.php'" value="Consultar Alumno"></button>
   <br>
 </div>
 
-  <div>
+  <div class="menu">
   <h2>Alumnos inscritos por curso </h2>
   <button type="button" onclick="location.href= 'groupByInscritos.php'" value="Modificar Alumno"></button>
   <br>
 </div>
 
-  <div>
+  <div class="menu">
   <h2>Tabla multiplicar </h2>
   <button type="button" onclick="location.href= 'tablasM1.php'" value="Modificar Alumno"></button>
   <br> 
 </div>
 
-  <div>
+  <div class="menu">
   <h2>Inscritos </h2>
   <button type="button" onclick="location.href= 'inscritos1.php'" value="Alumnos por Curso"></button>
   <br> 
 </div>
 
-<div>
+<div class="menu">
   <h2>Paginación </h2>
   <button type="button" onclick="location.href= 'paginacion.php'" value="Alumnos por Curso"></button>
   <br> 
 </div>
 
-<div>
+<div class="menu">
   <h2>Imagen </h2>
   <button type="button" onclick="location.href= 'imagen.php'" value="Alumnos por Curso"></button>
   <br> 
 </div>
 
-<div>
-  <h2>Cookes </h2>
+<div class="menu">
+  <h2>Cookies </h2>
   <button type="button" onclick="location.href= 'cookies1.php'" value="Configuración cookies"></button>
   <br> 
 </div>
 
-<div>
+<div class="menu">
   <h2>Borrar Cookies </h2>
   <button type="button" onclick="location.href= 'borrarCookie1.php'" value="Configuración cookies"></button>
   <br> 
 </div>
 
-<div>
+<div class="menu">
   <h2>Variables Cookies </h2>
   <button type="button" onclick="location.href= '/ejercicioCookies/variablesSesion1.php'" value="Configuración cookies"></button>
   <br> 
 </div>
 
-<div>
-  <h2> ARchivo externo </h2>
+<div class="menu">
+  <h2> Arhivo externo </h2>
   <button type="button" onclick="location.href= 'new.php'" value="Configuración cookies"></button>
+  <br> 
+</div>
+
+<div class="menu">
+  <h2> Ejercicio Inicio Sesion  </h2>
+  <button type="button" onclick="location.href= 'ejercicioInicioSesion/pag1.php'" value="Configuración cookies"></button>
+  <br> 
+</div>
+
+<div class="menu">
+  <h2> Ejercicio Archivo texto fecha </h2>
+  <button type="button" onclick="location.href= './ejercicioTexto/pag1.php'" value="Configuración cookies"></button>
+  <br> 
+</div>
+
+<div class="menu">
+  <h2> Ejercicio fecha </h2>
+  <button type="button" onclick="location.href= 'fecha1.php'" value="Configuración cookies"></button>
   <br> 
 </div>
  

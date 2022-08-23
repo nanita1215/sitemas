@@ -23,7 +23,7 @@
   ?>
   <a href="pag3.php">Borrar cookies</a>
 
-  <form action="index.html" method= "post">
+  <form action="../index.html" method= "post">
     <input type="submit" value="Inicio">
   </form>
   
