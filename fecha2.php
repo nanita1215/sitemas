@@ -28,6 +28,10 @@
     echo "El día es un texto";
   }
   ?>
+
+<form action="index.html" method= "post">
+    <input type="submit" value="Inicio">
+  </form>
 </body>
 
 </html>

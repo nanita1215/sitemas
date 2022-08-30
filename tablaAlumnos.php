@@ -1,24 +1,24 @@
 <html>
-
+<style>
+  div {
+    text-align: center;
+  }
+</style>
 <head>
   <title>Problema</title>
 </head>
-
-
-
 <body>
-
-
   
 <?php
 // incluirlo en la pagina de las consultas  
 if (isset($_REQUEST['pos']))
-  $inicio = $_REQUEST['pos'];
+$inicio = $_REQUEST['pos'];
 else
-  $inicio = 0;
+$inicio = 0;
 ?>
 
-    <?php
+<div>
+<?php
     require_once("externo1.php");
 
 
@@ -38,13 +38,14 @@ else
 
   <?php
   $conexion       = retornarConexion();
+  $impresos =     0 ;
   
     $registros    = mysqli_query($conexion, "select alu.codigo as codigo,
                                           alu.nombre,
                                           alu.mail,
                                           alu.codigocurso,
                                           alu.fechanac,
-                                          alu.contraseña 
+                                          alu.contraseña, 
                                           cur.nombrecurso 
                                      from alumnos as alu
                                      inner join cursos as cur on cur.codigo = alu.codigocurso limit $inicio,4") or
@@ -57,6 +58,24 @@ else
     echo "Mail:" . $reg['mail'] . "<br>";
     echo "Fecha de Nacimiento:" . $reg['fechanac'] . "<br>";
     echo "Curso:" . $reg['nombrecurso'] . "<br>";
+    echo "<form action='2.php' method= 'post'>  
+        <input type='hidden' value='$reg[codigo]' name='codigo'><br>
+        Editar 
+        <input type = 'submit' value = '✏️'>          
+        </form>";
+
+        echo "<form action='borrarReg2.php' method= 'post'>    
+        <input type='hidden' value='$reg[codigo]' name='codigo'>
+        Borrar <input type = 'submit' value = '❌'>          
+        </form>";
+        
+
+
+  //   <form action="2.php" method="post">
+  //   Ingrese el codigo del alumno:
+  //   <input type="text" name="codigo"><br>
+  //   <input type="submit" value="buscar">
+  // </form>
     echo "<hr>";
   }  
   if ($inicio == 0)
@@ -77,7 +96,7 @@ else
 
   mysqli_close($conexion);
   ?>
-  
+</div>
   <form action="index.html" method= "post">
     <input type="submit" value="Inicio">
   </form>

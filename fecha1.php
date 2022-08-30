@@ -11,6 +11,10 @@
     <br>
     <input type="submit" value="validar">
   </form>
+
+  <form action="index.html" method= "post">
+    <input type="submit" value="Inicio">
+  </form>
 </body>
 
 </html>
