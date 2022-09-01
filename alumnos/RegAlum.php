@@ -72,10 +72,12 @@
                     <div class="mb-3 row">
                       <div class="offset-sm-4 col-sm-8">
                         <button type="submit" class="btn btn-primary">Registrar</button>
-                        <button type="submit" class="btn btn-primary">Inicio</button>
-
                       </div>
                     </div>
+                  </form>
+
+                  <form action="../menu.php">                    
+                    <button type="submit" class="btn btn-primary">Inicio</button>
                   </form>
                 </div>
               </div>
@@ -83,8 +85,7 @@
               
                                 
                   
-              </section> 
-    
+              </section>    
         
   
   <script src="../public/js/bootstrap.bundle.min.js"></script>
