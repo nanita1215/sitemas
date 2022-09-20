@@ -17,7 +17,7 @@ elseif ($_REQUEST['radio'] == "azul")
   <br>
   <a href="cookies1.php">Ir a la otra página</a>
 
-  <form action="index.html" method= "post">
+  <form action="menu.php" method= "post">
     <input type="submit" value="Inicio">
   </form>
 </body>

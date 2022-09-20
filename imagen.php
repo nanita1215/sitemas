@@ -11,7 +11,7 @@
     <input type="submit" value="Enviar">
   </form>
 
-  <form action="index.html" method= "post">
+  <form action="menu.php" method= "post">
     <input type="submit" value="Inicio">
   </form>
 </body>

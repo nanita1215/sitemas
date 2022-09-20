@@ -19,7 +19,7 @@ $inicio = 0;
 
 <div>
 <?php
-    require_once("externo1.php");
+    require_once("../externo1.php");
 
 
     $conexion01= retornarConexion();
@@ -58,7 +58,7 @@ $inicio = 0;
     echo "Mail:" . $reg['mail'] . "<br>";
     echo "Fecha de Nacimiento:" . $reg['fechanac'] . "<br>";
     echo "Curso:" . $reg['nombrecurso'] . "<br>";
-    echo "<form action='2.php' method= 'post'>  
+    echo "<form action='modificar2.php' method= 'post'>  
         <input type='hidden' value='$reg[codigo]' name='codigo'><br>
         Editar 
         <input type = 'submit' value = '✏️'>          
@@ -82,11 +82,11 @@ $inicio = 0;
     echo "anteriores ";
   else {
     $anterior = $inicio - 4;
-    echo "<a href=\"paginacion.php?pos=$anterior\">Anteriores </a>";
+    echo "<a href=\"tablaAlumnos.php?pos=$anterior\">Anteriores </a>";
   }
   if ($impresos == 4) {
     $proximo = $inicio + 4;
-    echo "<a href=\"paginacion.php?pos=$proximo\">Siguientes</a>";
+    echo "<a href=\"tablaAlumnos.php?pos=$proximo\">Siguientes</a>";
   } else{
     echo "siguientes";
   }
@@ -97,7 +97,7 @@ $inicio = 0;
   mysqli_close($conexion);
   ?>
 </div>
-  <form action="index.html" method= "post">
+  <form action="../menu.php" method= "post">
     <input type="submit" value="Inicio">
   </form>
 

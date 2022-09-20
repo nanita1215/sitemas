@@ -28,25 +28,25 @@
                     <div class="mb-3 row">
                       <label for="nombre" class="col-4 col-form-label">Ingrese su nombre</label>
                       <div class="col-8">
-                        <input type="text" class="form-control" name="nombre" placeholder="Nombre completo aquí">
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre completo aquí" required>
                       </div>
                     </div>
                     <div class="mb-3 row">
                       <label for="mail" class="col-4 col-form-label">Ingrese mail</label>
                       <div class="col-8">
-                        <input type="text" class="form-control" name="mail" placeholder="Su correo aquí">
+                        <input type="text" class="form-control" name="mail" placeholder="Su correo aquí" required>
                       </div>
                     </div>
                     <div class="mb-3 row">
                       <label for="contraseña" class="col-4 col-form-label">Ingrese contraseña</label>
                       <div class="col-8">
-                        <input type="password" class="form-control" name="contraseña" placeholder="Contraseña segura">
+                        <input type="password" class="form-control" name="contraseña" placeholder="Contraseña segura" required>
                       </div>
                     </div>
                     <div class="mb-3 row">
                       <label for="date" class="col-4 col-form-label">Ingrese fecha de nacimiento</label>
                       <div class="col-8">
-                        <input type="date" class="form-control" name="date">
+                        <input type="date" class="form-control" name="date" required>
                       </div>
                     </div>
                     <div class="mb-3 row">

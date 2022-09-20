@@ -21,7 +21,7 @@
     <input type="submit" value="Regresar">    
   </form>
     <br>
-  <form action="index.html" method= "post">
+    <form action="../menu.php" method= "post">
     <input type="submit" value="Inicio">
   </form>
 </body>

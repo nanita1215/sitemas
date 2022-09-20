@@ -14,14 +14,17 @@
     die("Problemas en el select:" . mysqli_error($conexion));
   if ($regalu = mysqli_fetch_array($registros)) {
     ?>
-    <form action="3.php" method="post">
+    <form action="modificar3.php" method="post">
       Nombre: <input type="text" name="nombre" value="<?php echo $regalu['nombre'] ?>"><br>
       Mail: <input type="text" name="mail" value="<?php echo $regalu['mail'] ?>"><br>
-      <input type="hidden" name="codigo" value="<?php echo $regalu['codigo'] ?>">
+      Contraseña: <input type="password" name="contra" value="<?= $regalu['contraseña'] ?>"><br>
+      Fecha de nacimiento: <input type="date" name="date">
+      
+      <input type="hidden" name="codigo" value="<?php echo $regalu['codigo'] ?>"><br>
       <select name="codigocurso">
         <?php
           $registros = mysqli_query($conexion, "select * from cursos") or
-            die("Problemas en el select:" . mysql_error());
+            die("Problemas en el select:" . mysqli_error($conexion));
           while ($reg = mysqli_fetch_array($registros)) {
             if ($regalu['codigocurso'] == $reg['codigo'])
               echo "<option value=\"$reg[codigo]\" selected>$reg[nombrecurso]</option>";
@@ -34,7 +37,7 @@
       <input type="submit" value="Modificar ✏️">
     </form>
 
-    <form action="index.html" method= "post">
+    <form action="../menu.php" method= "post">
     <input type="submit" value="Inicio 🏠">
   </form>
   <?php

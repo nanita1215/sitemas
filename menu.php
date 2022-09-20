@@ -302,11 +302,44 @@ if(isset( $_SESSION['usuario'] )) {
                 </div>
               </div>
             </div>
+
+
+            <div class="card border-dark container-fluid">
+              <div class="row">
+                <div class="col">
+                  <i class="bi bi-person-lines-fill  "></i>
+                </div>
+                <div class="col">
+                  <h4 class="card-title">Imagen <br>  </h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card-body d-flex align-items-center justify-content-center">
+                  <a href="imagen.php" class="btn btn-info" >Ir</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-dark container-fluid">
+              <div class="row">
+                <div class="col">
+                  <i class="bi bi-person-lines-fill  "></i>
+                </div>
+                <div class="col">
+                  <h4 class="card-title">Color pagina <br>  </h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="card-body d-flex align-items-center justify-content-center">
+                  <a href="cookies1.php" class="btn btn-info" >Ir</a>
+                </div>
+              </div>
+            </div>
   
           </div>        
 
 
-          <div class="d-grid gap-2 col-6 mx-auto">
+          <div class="d-grid gap-4 col-4 mx-auto">
             <button class="btn btn-info border-dark" type="button">Inicio</button>            
           </div>
         </div>

@@ -30,7 +30,7 @@
     echo "No existe alumno con dicho mail";
   ?>
   <br>
-  <form action="index.html" method= "post">
+  <form action="/menu.php" method= "post">
     <input type="submit" value="Inicio">
   </form>
 </body>
