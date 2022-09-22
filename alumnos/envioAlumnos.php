@@ -13,8 +13,8 @@
     die("Problemas con la conexión");
 
   
-  mysqli_query($conexion, "insert into alumnos(nombre,mail,codigocurso,contraseña,fechanac) values 
-                       ('$_REQUEST[nombre]','$_REQUEST[mail]',$_REQUEST[codigocurso],'$_REQUEST[contraseña]','$_REQUEST[date]')")
+  mysqli_query($conexion, "insert into alumnos(nombre,mail,codigocurso,contraseña,fechanac,genero) values 
+                       ('$_REQUEST[nombre]','$_REQUEST[mail]',$_REQUEST[codigocurso],'$_REQUEST[contraseña]','$_REQUEST[date]','$_REQUEST[genero]')")
     or die("Problemas en el select" . mysqli_error($conexion));
 
   mysqli_close($conexion);

@@ -10,6 +10,12 @@ $impresos = 0;
   <title>Problema</title>
 </head>
 
+<style>
+  div {
+    text-align: center;
+  }
+</style>
+
 <body>
   <?php
   $conexion = mysqli_connect("localhost", "root", "", "base1") or
@@ -52,7 +58,7 @@ $impresos = 0;
                                            where codigocurso=$reg[codigocurso]") or
       die("Problemas en el select:" . mysqli_error($conexion));
     while ($reg2 = mysqli_fetch_array($registros2)) {
-      echo $reg2['nombre'] . "-";
+      echo " - " . $reg2['nombre'] . " <br> ";
     }
     echo "<hr>";
   }

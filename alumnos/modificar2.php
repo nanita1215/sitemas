@@ -18,7 +18,7 @@
       Nombre: <input type="text" name="nombre" value="<?php echo $regalu['nombre'] ?>"><br>
       Mail: <input type="text" name="mail" value="<?php echo $regalu['mail'] ?>"><br>
       Contraseña: <input type="password" name="contra" value="<?= $regalu['contraseña'] ?>"><br>
-      Fecha de nacimiento: <input type="date" name="date">
+      Fecha de nacimiento: <input type="date" name="date" value="<?= $regalu['fechanac'] ?>"><br>
       
       <input type="hidden" name="codigo" value="<?php echo $regalu['codigo'] ?>"><br>
       <select name="codigocurso">

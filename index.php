@@ -16,7 +16,7 @@
             <div class="container card p-4">
                 <form action="" method="POST">
                   <div class="mb-3 row">
-                    <label for="inputName" class="col-4 col-form-label">Ingrese usuario</label>
+                    <label for="inputName" class="col-4 col-form-label">Ingrese correo electronico</label>
                     <div class="col-8">
                       <input type="text" class="form-control" name="inputName" placeholder="Name">
                     </div>
@@ -47,7 +47,7 @@
   
                         }
                         else{
-                          echo "Datos incorrectos ";
+                          echo "<div style='width: 200px' class='alert alert-danger '>Datos incorrectos </div>";
                         }
                       }
                       else {

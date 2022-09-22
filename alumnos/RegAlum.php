@@ -47,8 +47,19 @@
                       <label for="date" class="col-4 col-form-label">Ingrese fecha de nacimiento</label>
                       <div class="col-8">
                         <input type="date" class="form-control" name="date" required>
+                    </div>
+
+                    <div class="mb-3 mt-3 row">
+                      <label for="date" class="col-4 col-form-label">Seleccione género</label>
+                      <div class="col-8">
+                        <select class="form-control" name="genero" >
+                          <option value="F">Femenino</option>
+                          <option value="M">Masculino</option>
+
+                        </select>
                       </div>
                     </div>
+
                     <div class="mb-3 row">
                       <label for="inputName" class="col-4 col-form-label">Seleccione curso</label>
                       <div class="col-8">
@@ -80,12 +91,13 @@
                     <button type="submit" class="btn btn-primary">Inicio</button>
                   </form>
                 </div>
-              </div>
+            </div>
+          </div>
               <!-- Contenido de la tarjeta  -->
               
                                 
                   
-              </section>    
+    </section>    
         
   
   <script src="../public/js/bootstrap.bundle.min.js"></script>
